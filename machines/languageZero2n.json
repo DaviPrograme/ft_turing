@@ -1,0 +1,21 @@
+{
+    "name" : "languageZero2n",
+    "alphabet": [ "0", ".", "y", "n"],
+    "blank" : ".",
+    "states" : [ "yes", "no" ,"error", "HALT" ],
+    "initial" : "yes",
+    "finals" : [ "HALT" ],
+    "transitions" : {
+    "yes": [
+        { "read" : "0", "to_state": "no", "write": "0", "action": "RIGHT"},
+        { "read" : ".", "to_state": "HALT", "write": "y", "action": "RIGHT"}
+    ],
+    "no": [
+        { "read" : "0", "to_state": "yes", "write": "0", "action": "RIGHT"},
+        { "read" : ".", "to_state": "error", "write": "n", "action": "RIGHT"}
+    ],
+    "error": [
+        { "read" : "@", "to_state": "@", "write": "@", "action": "RIGHT"}
+    ]
+    }
+}
