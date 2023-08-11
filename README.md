@@ -41,4 +41,4 @@ O programa ft_turing aceita como argumentos um arquivo JSON que descreve a Máqu
 ```bash
 lein run [arquivo_json] [entrada]
 ```
-Os arquivos json com algumas descrições de maquinas estão dentro da pasta machines, mas sinta-se a vontade para brincar com o projeto e crias suas proprias maquinas (achei a criação de maquinas um exercicio divertido :) )
+Os arquivos json com algumas descrições de maquinas estão dentro da pasta [machines](https://github.com/DaviPrograme/ft_turing/tree/main/machines), mas sinta-se a vontade para brincar com o projeto e crias suas proprias maquinas (achei a criação de maquinas um exercicio divertido :) )
