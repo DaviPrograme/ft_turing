@@ -122,5 +122,49 @@ Em outras palavras, a Máquina de Turing Universal é como uma "máquina de máq
 
 Esse conceito é fundamental na teoria da computabilidade porque mostra que, teoricamente, qualquer processo computacional que pode ser descrito por uma Máquina de Turing pode ser realizado por uma única Máquina de Turing Universal, demonstrando assim a noção de que existem limites teóricos para o que é computável.
 
+### 5) mtu_add
+
+O objetivo da maquina [mtu_add](https://github.com/DaviPrograme/ft_turing/blob/main/machines/mtu_add.json) é ser uma maquina de turing universal destinada a receber como parâmetro a descrição de uma maquina como a [unary_add](https://github.com/DaviPrograme/ft_turing/blob/main/machines/unary_add.json) e juntamente com isso o input da mesma, um exemplo de input dessa maquina seria o seguinte:
+
+```bash
+"@[1+=.]%[abcds]|a&a{[+b>1][1a>1]}b{[1b>1][=c>=]}c{[.d<.]}d{[1s>.][=d<.]}*111+11="
+```
+
+**oh meu Deus... o que significa o input acima?** Bem, caso fossemos separar o input acima em campos ele seria representado assim:
+
+| Campo          | Descrição                                                             |
+|----------------|-----------------------------------------------------------------------|
+| @              | alfabeto                                                              |
+| %              | lista de estados                                                      |
+| \|             | estado inicial                                                        |
+| &              | descrição das transições de cada estado                               |
+| *              | separação entre input e descrição da maquina                          |
+
+Dessa forma ficaria assim:
+
+| Campo          | Descrição                                                             |
+|----------------|-----------------------------------------------------------------------|
+|alfabeto        | [1+=.]                                                                |
+|lista de estados| [abcds]                                                               |
+|estado inicial  | a                                                                     |
+|transições      | a{[+b>1][1a>1]}b{[1b>1][=c>=]}c{[.d<.]}d{[1s>.][=d<.]}                |
+|input           | 111+11=                          |
+
+
+falando um pouco mais sobre as transições de estado, uma tansição como essa abaixo: 
+```bash
+a{[+b>1][1a>1]}
+```
+
+teria um aspecto igual a esta no formato JSON:
+```bash
+"a": [
+        { "read" : "+", "to_state": "b" , "write": "1", "action": "RIGHT"},
+        { "read" : "1", "to_state": "a", "write": "1", "action": "RIGHT"}
+    ],
+```
+
+**OBSERVAÇÃO: qualquer semelhança entre esse estado "a" e o estado "scanright" do [unary_add](https://github.com/DaviPrograme/ft_turing/blob/main/machines/unary_add.json) não é mera coincidência ;)**
+
 
 
