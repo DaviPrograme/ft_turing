@@ -114,5 +114,13 @@ lein run ./machines/languageZero2n.json "0000"
 
 ![mapa de estados do 0n1n](https://github.com/DaviPrograme/ft_turing/blob/main/languageZero2n.png)
 
+### Antes de explicar sobre a 5ª máquina... o que é uma maquina de turing universal?
+
+Uma Máquina de Turing Universal é capaz de simular o comportamento de qualquer outra Máquina de Turing. Isso significa que, se você tiver uma descrição da configuração inicial e das regras de uma determinada Máquina de Turing, a MTU pode imitar o processo de computação dessa máquina específica.
+
+Em outras palavras, a Máquina de Turing Universal é como uma "máquina de máquinas". Ela pode ser programada para simular qualquer algoritmo computacional, desde que esse algoritmo possa ser expresso em termos das operações básicas suportadas pelas Máquinas de Turing, como ler e escrever em fitas, mover a cabeça de leitura/escrita, etc.
+
+Esse conceito é fundamental na teoria da computabilidade porque mostra que, teoricamente, qualquer processo computacional que pode ser descrito por uma Máquina de Turing pode ser realizado por uma única Máquina de Turing Universal, demonstrando assim a noção de que existem limites teóricos para o que é computável.
+
 
 
