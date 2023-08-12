@@ -59,4 +59,16 @@ A maquina de turing para executar alguma ação tem que receber como primeiro pa
 | transitions    | um mapa que apresenta a lista detalhada de transições de cada estado  |
 
 
+## Maquinas fornecidas em formato JSON
+
+### unary_add
+
+O objetivo da maquina [unary_add](https://github.com/DaviPrograme/ft_turing/blob/main/machines/unary_add.json) é realizar operações de adição unária, ou seja, ao receber como input a string "11+111=" ela retornará "11111" isso porque dois "ums" mais três "ums" é igual a cinco "ums"
+
+Exemplo de execução:
+```bash
+lein run ./machines/unary_add.json "11+111="
+```
+
+
 
