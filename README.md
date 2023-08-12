@@ -103,3 +103,16 @@ lein run ./machines/0n1n.json "000111"
 ![mapa de estados do 0n1n](https://github.com/DaviPrograme/ft_turing/blob/main/0n1n.png)
 
 
+### 4) languageZero2n
+
+O objetivo da maquina [languageZero2n](https://github.com/DaviPrograme/ft_turing/blob/main/machines/languageZero2n.json) é determinar se um input tem a quantidade de zeros par e inserindo o caracter "y" após o caracter mais a direita do input em caso afirmativo ou inserindo um "n" em caso negativo. Por exemplo, os inputs "00" e "0000" seriam classificados como fazendo parte da familia e por isso gerariam as strings "00y" e "0000y" respectivamente, já os inputs "000" e "00000" NÃO seriam classificados como sendo da familia e por este motivo gerariam as strings "000n" e "00000n" respectivamente.
+
+Exemplo de execução:
+```bash
+lein run ./machines/languageZero2n.json "0000"
+```
+
+![mapa de estados do 0n1n](https://github.com/DaviPrograme/ft_turing/blob/main/0n1n.png)
+
+
+
