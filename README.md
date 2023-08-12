@@ -166,5 +166,8 @@ teria um aspecto igual a esta no formato JSON:
 
 **OBSERVAÇÃO: qualquer semelhança entre esse estado "a" e o estado "scanright" do [unary_add](https://github.com/DaviPrograme/ft_turing/blob/main/machines/unary_add.json) não é mera coincidência ;)**
 
-
+Exemplo de execução:
+```bash
+lein run ./machines/mtu_add.json "@[1+=.]%[abcds]|a&a{[+b>1][1a>1]}b{[1b>1][=c>=]}c{[.d<.]}d{[1s>.][=d<.]}*111+11="
+```
 
