@@ -88,5 +88,5 @@ ou
 lein run ./machines/palidrome.json "level"
 ```
 
-![mapa de estados da unary_add](https://github.com/DaviPrograme/ft_turing/blob/main/unary_add.png)
+![mapa de estados do palidrome_simple](https://github.com/DaviPrograme/ft_turing/blob/main/palidrome_simple.png)
 
