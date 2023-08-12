@@ -61,14 +61,32 @@ A maquina de turing para executar alguma ação tem que receber como primeiro pa
 
 ## Maquinas fornecidas em formato JSON
 
-### unary_add
+### 1) unary_add
 
-O objetivo da maquina [unary_add](https://github.com/DaviPrograme/ft_turing/blob/main/machines/unary_add.json) é realizar operações de adição unária, ou seja, ao receber como input a string "11+111=" ela retornará "11111" isso porque dois "ums" mais três "ums" é igual a cinco "ums"
+O objetivo da maquina [unary_add](https://github.com/DaviPrograme/ft_turing/blob/main/machines/unary_add.json) é realizar operações de adição unária, ou seja, ao receber como input a string "11+111=" ela geraria a string "11111", isso porque dois "ums" mais três "ums" é igual a cinco "ums".
 
 Exemplo de execução:
 ```bash
 lein run ./machines/unary_add.json "11+111="
 ```
 
+![mapa de estados da unary_add](https://github.com/DaviPrograme/ft_turing/blob/main/unary_add.png)
 
+
+### 2) palidrome_simple
+
+O objetivo da maquina [palidrome_simple](https://github.com/DaviPrograme/ft_turing/blob/main/machines/palidrome_simple.json) é determinar se uma string binária é um palidromo inserindo um "y" após o caracter mais a direita da string em caso afirmativo ou um "n" em caso negativo. Por exemplo, enquanto a input "1001" seria classificada como sendo um palíndromo gerando assim a string "1001y", o input "1011" seria classificada como sendo NÃO palíndromo e por esse motivo geraria a string "1011n". O arquivo [palidrome.json](https://github.com/DaviPrograme/ft_turing/blob/main/machines/palidrome.json) realiza o mesmo procedimento, só que recebendo como input palavras compostas por caracteres de "a" a "z" (em minúsculo apenas).
+
+Exemplo de execução:
+```bash
+lein run ./machines/palidrome_simple.json "1001"
+```
+
+ou 
+
+```bash
+lein run ./machines/palidrome.json "level"
+```
+
+![mapa de estados da unary_add](https://github.com/DaviPrograme/ft_turing/blob/main/unary_add.png)
 
