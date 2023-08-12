@@ -100,6 +100,6 @@ Exemplo de execução:
 lein run ./machines/0n1n.json "000111"
 ```
 
-![mapa de estados do palidrome_simple](https://github.com/DaviPrograme/ft_turing/blob/main/palidrome_simple.png)
+![mapa de estados do 0n1n](https://github.com/DaviPrograme/ft_turing/blob/main/0n1n.png)
 
 
