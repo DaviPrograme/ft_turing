@@ -42,3 +42,21 @@ O programa ft_turing aceita como argumentos um arquivo JSON que descreve a Máqu
 lein run [arquivo_json] [entrada]
 ```
 Os arquivos json com algumas descrições de maquinas estão dentro da pasta [machines](https://github.com/DaviPrograme/ft_turing/tree/main/machines), mas sinta-se a vontade para brincar com o projeto e crias suas proprias maquinas (achei a criação de maquinas um exercicio divertido :) )
+
+## Arquivo de configuração da maquina de turing
+
+A maquina de turing para executar alguma ação tem que receber como primeiro parâmetro o caminho de um arquivo de configuração json que contém as seguintes informações:
+
+
+| Campo          | Descrição                                                             |
+|----------------|-----------------------------------------------------------------------|
+| name           | nome da maquina                                                       |
+| alphabet       | caracteres permitidos na fita e na operação da maquina                |
+| blank          | caracter que representa um espaço não preenchido                      |
+| states         | lista de estados que a maquina utilizara                              |
+| initial        | estado inicial da maquina                                             |
+| finals         | lista de estados que representa o fim do processo                     |
+| transitions    | um mapa que apresenta a lista detalhada de transições de cada estado  |
+
+
+
