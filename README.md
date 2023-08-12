@@ -112,7 +112,7 @@ Exemplo de execução:
 lein run ./machines/languageZero2n.json "0000"
 ```
 
-![mapa de estados do 0n1n](https://github.com/DaviPrograme/ft_turing/blob/main/0n1n.png)
+![mapa de estados do 0n1n](https://github.com/DaviPrograme/ft_turing/blob/main/languageZero2n.png)
 
 
 
