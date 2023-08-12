@@ -90,3 +90,16 @@ lein run ./machines/palidrome.json "level"
 
 ![mapa de estados do palidrome_simple](https://github.com/DaviPrograme/ft_turing/blob/main/palidrome_simple.png)
 
+
+### 3) 0n1n
+
+O objetivo da maquina [0n1n](https://github.com/DaviPrograme/ft_turing/blob/main/machines/0n1n.json) é determinar se se um input composto por caracteres "0" e "1" fazem parte da familia e inserindo o caracter "y" após o caracter mais a direita do input caso afirmativo ou inserindo um "n" em caso negativo. Por exemplo, o input "000111" seria classificado como fazendo parte da familia e por isso geraria a string "000111y", já o input "00011" NÃO seria classificado como sendo da familia e por este motivo geraria a string "00011n".
+
+Exemplo de execução:
+```bash
+lein run ./machines/0n1n.json "000111"
+```
+
+![mapa de estados do palidrome_simple](https://github.com/DaviPrograme/ft_turing/blob/main/palidrome_simple.png)
+
+
