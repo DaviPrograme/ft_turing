@@ -124,7 +124,7 @@ Esse conceito é fundamental na teoria da computabilidade porque mostra que, teo
 
 ### 5) mtu_add
 
-O objetivo da maquina [mtu_add](https://github.com/DaviPrograme/ft_turing/blob/main/machines/mtu_add.json) é ser uma maquina de turing universal destinada a receber como parâmetro a descrição de uma maquina como a [unary_add](https://github.com/DaviPrograme/ft_turing/blob/main/machines/unary_add.json) e juntamente com isso o input da mesma, um exemplo de input dessa maquina seria o seguinte:
+O objetivo da maquina [mtu_add](https://github.com/DaviPrograme/ft_turing/blob/main/machines/mtu_add.json) é ser uma maquina de turing universal destinada a receber como parâmetro a descrição de uma máquina como a [unary_add](https://github.com/DaviPrograme/ft_turing/blob/main/machines/unary_add.json) e juntamente com isso o input da mesma, um exemplo de input dessa maquina seria o seguinte:
 
 ```bash
 "@[1+=.]%[abcds]|a&a{[+b>1][1a>1]}b{[1b>1][=c>=]}c{[.d<.]}d{[1s>.][=d<.]}*111+11="
@@ -138,7 +138,7 @@ O objetivo da maquina [mtu_add](https://github.com/DaviPrograme/ft_turing/blob/m
 | %              | lista de estados                                                      |
 | \|             | estado inicial                                                        |
 | &              | descrição das transições de cada estado                               |
-| *              | separação entre input e descrição da maquina                          |
+| *              | input da máquina                                                      |
 
 Dessa forma ficaria assim:
 
