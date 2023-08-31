@@ -142,7 +142,7 @@ O objetivo da maquina [mtu_add](https://github.com/DaviPrograme/ft_turing/blob/m
 
 Dessa forma ficaria assim:
 
-| Campo          | Descrição                                                             |
+| Campo          | Valor                                                                 |
 |----------------|-----------------------------------------------------------------------|
 |alfabeto        | [1+=.]                                                                |
 |lista de estados| [abcds]                                                               |
